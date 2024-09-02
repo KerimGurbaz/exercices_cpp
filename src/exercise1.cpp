@@ -89,19 +89,10 @@ int main () {
 
     return 0;
 }
- */
-//écrire un programme qui calcule les racines carrées
-
-
-#include <cmath>
-//
-
-#include <cmath>
 
 int main() {
 
     double x ;
-
     do {
         cout<<"donnez un nobre positif : ";
         cin>>x;
@@ -117,4 +108,30 @@ int main() {
     }while(x);
 
     return 0;
+
+}
+ */
+
+//écrire un programme qui calcule les racines carrées
+
+#include <cmath>
+
+//
+
+
+
+#include <cmath>
+int main() {
+    float n;
+    double sum(0);
+    cout<<"donnez un nobre"<<"\n";
+    cin>>n;
+
+    for(double i=1; i <= n; i++) {
+        sum += 1/i ;
+         cout<< "la somme est : "<<sum<<endl;
+    }
+
+
+
 }
