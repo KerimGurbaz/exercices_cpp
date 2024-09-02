@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 /*
 * int main() {
     int n, p;
@@ -42,9 +43,12 @@ for(i=0, n = 0; i<3; i++, n +=i, cout<<" D : i = " << i << ", n = "<< n <<"\n");
     return 0;
  }
  */
-
-//écrire un programme qui calcule les racines carrées
 #include <cmath>
+
+/*
+ *
+* //écrire un programme qui calcule les racines carrées
+
 int main() {
 
     double x;
@@ -60,4 +64,57 @@ int main() {
 
 
     return 0 ;
+}
+
+int main () {
+
+    double x;
+
+    do {
+        cout<<"donnez un nobre positif : ";
+        cin>>x;
+
+        if(x<0) {
+            cout<<"svp positif \n";
+            continue;
+        }
+        else if(x>0) {
+            cout<<"sa racine carée est : "<<sqrt(x)<<endl;
+        }
+
+
+    }while(x);
+
+
+
+    return 0;
+}
+ */
+//écrire un programme qui calcule les racines carrées
+
+
+#include <cmath>
+//
+
+#include <cmath>
+
+int main() {
+
+    double x ;
+
+    do {
+        cout<<"donnez un nobre positif : ";
+        cin>>x;
+
+        if(x<0) {
+            cout<<"svp positif"<<endl;
+
+            continue;
+        }
+
+        if(x>0)cout<<"sa racine carée est : "<<sqrt(x)<<endl;
+
+    }while(x);
+
+    return 0;
 }
