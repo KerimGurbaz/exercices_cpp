@@ -1,0 +1,4 @@
+# ninja log v6
+2	446	7469753693384988	build.ninja	ab02db1232f5430e
+15	324	7469753694947240	CMakeFiles/exercices_cpp.dir/src/exercise1.cpp.obj	c800a51ff9c99162
+326	469	7469753698051772	exercices_cpp.exe	51d47239b56b16ee
