@@ -3,5 +3,6 @@ project(exercices_cpp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(exercices_cpp
-        src/exercise1.cpp)
+add_executable(exercise1_exe
+        src/exercise1.cpp
+      )

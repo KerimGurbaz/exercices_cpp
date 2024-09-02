@@ -11,7 +11,7 @@ int main() {
     p++;
     cout << "A: n = " << n << " p = " << p << "\n";
 
-    // İkinci kısım
+    // İkinci kısım.
     n = p = 0;
     while (n < 5) {
         n += 2;

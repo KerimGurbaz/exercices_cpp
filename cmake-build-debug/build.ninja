@@ -41,37 +41,37 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = C$:/Users/Krm/CLionProjects/exercices_cpp/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target exercices_cpp
+# Object build statements for EXECUTABLE target exercise1_exe
 
 
 #############################################
-# Order-only phony target for exercices_cpp
+# Order-only phony target for exercise1_exe
 
-build cmake_object_order_depends_target_exercices_cpp: phony || CMakeFiles/exercices_cpp.dir
+build cmake_object_order_depends_target_exercise1_exe: phony || CMakeFiles/exercise1_exe.dir
 
-build CMakeFiles/exercices_cpp.dir/src/exercise1.cpp.obj: CXX_COMPILER__exercices_cpp_unscanned_Debug C$:/Users/Krm/CLionProjects/exercices_cpp/src/exercise1.cpp || cmake_object_order_depends_target_exercices_cpp
-  DEP_FILE = CMakeFiles\exercices_cpp.dir\src\exercise1.cpp.obj.d
+build CMakeFiles/exercise1_exe.dir/src/exercise1.cpp.obj: CXX_COMPILER__exercise1_exe_unscanned_Debug C$:/Users/Krm/CLionProjects/exercices_cpp/src/exercise1.cpp || cmake_object_order_depends_target_exercise1_exe
+  DEP_FILE = CMakeFiles\exercise1_exe.dir\src\exercise1.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\exercices_cpp.dir
-  OBJECT_FILE_DIR = CMakeFiles\exercices_cpp.dir\src
+  OBJECT_DIR = CMakeFiles\exercise1_exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\exercise1_exe.dir\src
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target exercices_cpp
+# Link build statements for EXECUTABLE target exercise1_exe
 
 
 #############################################
-# Link the executable exercices_cpp.exe
+# Link the executable exercise1_exe.exe
 
-build exercices_cpp.exe: CXX_EXECUTABLE_LINKER__exercices_cpp_Debug CMakeFiles/exercices_cpp.dir/src/exercise1.cpp.obj
+build exercise1_exe.exe: CXX_EXECUTABLE_LINKER__exercise1_exe_Debug CMakeFiles/exercise1_exe.dir/src/exercise1.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\exercices_cpp.dir
+  OBJECT_DIR = CMakeFiles\exercise1_exe.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = exercices_cpp.exe
-  TARGET_IMPLIB = libexercices_cpp.dll.a
-  TARGET_PDB = exercices_cpp.exe.dbg
+  TARGET_FILE = exercise1_exe.exe
+  TARGET_IMPLIB = libexercise1_exe.dll.a
+  TARGET_PDB = exercise1_exe.exe.dbg
 
 
 #############################################
@@ -99,7 +99,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build exercices_cpp: phony exercices_cpp.exe
+build exercise1_exe: phony exercise1_exe.exe
 
 # =============================================================================
 # Folder targets.
@@ -109,7 +109,7 @@ build exercices_cpp: phony exercices_cpp.exe
 #############################################
 # Folder: C:/Users/Krm/CLionProjects/exercices_cpp/cmake-build-debug
 
-build all: phony exercices_cpp.exe
+build all: phony exercise1_exe.exe
 
 # =============================================================================
 # Built-in targets

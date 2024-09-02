@@ -1,6 +1,8 @@
 # ninja log v6
-2	446	7469760659122394	build.ninja	ab02db1232f5430e
-15	324	7469753694947240	CMakeFiles/exercices_cpp.dir/src/exercise1.cpp.obj	c800a51ff9c99162
-326	469	7469753698051772	exercices_cpp.exe	51d47239b56b16ee
+2	410	7469780912425475	build.ninja	ab02db1232f5430e
 20	488	7469763674992971	CMakeFiles/exercices_cpp.dir/src/exercise1.cpp.obj	c800a51ff9c99162
 490	731	7469763679688960	exercices_cpp.exe	51d47239b56b16ee
+20	344	7469766624145771	CMakeFiles/exercices_cpp.dir/src/exercise2.cpp.obj	73106e0e31cfef0
+2	367	7469780912425475	build.ninja	ab02db1232f5430e
+25	357	7469780913600094	CMakeFiles/exercise1_exe.dir/src/exercise1.cpp.obj	5efd7478842dcda4
+358	458	7469780916938521	exercise1_exe.exe	c9c5224deffca0b6
