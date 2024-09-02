@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-
-int main() {
+/*
+* int main() {
     int n, p;
 
     // İlk kısım
@@ -21,3 +21,12 @@ int main() {
 
     return 0;
 }
+
+ */
+ int main() {
+    int i, n;
+     for(i=0, n = 0;i<5; i++)
+         n++;
+     cout<<" A : i = " << i << ", n = "<< n <<"\n";
+
+ }
