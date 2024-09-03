@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include <string>
 
 /*
 * int main() {
@@ -116,11 +117,8 @@ int main() {
 
 #include <cmath>
 
-//
-
-
-
-#include <cmath>
+/*
+ *#include <cmath>
 int main() {
     float n;
     double sum(0);
@@ -129,9 +127,49 @@ int main() {
 
     for(double i=1; i <= n; i++) {
         sum += 1/i ;
-         cout<< "la somme est : "<<sum<<endl;
+        cout<< "la somme est : "<<sum<<endl;
     }
+ */
+
+int main() {
+    int n;
+    string c ="*";
+    string spaces =" ";
+    string result ;
+    cin>>n;
+
+    for(int row = 1; row<=n ; ++row) {
+        result="";
+
+        //add spaces;
+        for(int i = 0; i < n-row ; ++i) {
+            result += spaces;
+        }
+        // add stars
+        for(int i =0 ; i<2*row-1 ; ++i) {
+            result +=c;
+        }
+
+        cout<<result<< endl;
 
 
-
+    }
+    return 0;
 }
+
+
+
+/*
+    * do {
+         for(i=1; i<n; i++){
+             result += spaces;
+         }
+         for(i=n-2 ; i>0; i--) {
+             result += c;
+         }
+
+         cout<<result<<endl;
+     }
+        while(n>0);
+ */
+
