@@ -130,8 +130,8 @@ int main() {
         cout<< "la somme est : "<<sum<<endl;
     }
  */
-
-int main() {
+/*
+*int main() {
     int n;
     string c ="*";
     string spaces =" ";
@@ -156,8 +156,8 @@ int main() {
     }
     return 0;
 }
-
-
+ *
+ */
 
 /*
     * do {
@@ -172,4 +172,26 @@ int main() {
      }
         while(n>0);
  */
+
+int main() {
+    int n;
+    cout<< "Combien de lignes : "<<endl;
+    cin>>n;
+
+    for(int i=1; i<n; i++) {
+
+        for(int j=0; j<n-i; j++) {
+            cout<<" ";
+        }
+
+        for(int k = 0; k<2*i-1; k++) {
+            cout<<"*";
+        }
+        cout<< endl;
+    }
+
+
+    return 0;
+
+}
 
