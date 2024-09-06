@@ -209,11 +209,9 @@ int main() {
     return 0;
 }
  */
-
-int main() {
-
-    //Fibonacci
-
+//Fibonacci
+/*
+* int main() {
 
    int n, first(1),second(2),sum;
     cin>> n;
@@ -232,4 +230,15 @@ int main() {
    while(true);
 
     return 0;
+}
+ */
+
+int main() {
+    int x = 7;
+    int* ptr = &x;
+    cout<<x<<endl;
+    cout<<&x<<endl;
+    cout<<ptr<<endl;
+    cout<<*ptr<<endl;
+
 }
