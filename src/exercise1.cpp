@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#include <iomanip>
 #include <string>
 
 /*
@@ -173,25 +174,38 @@ int main() {
         while(n>0);
  */
 
+
+//afficher toutes les manières possibles d'obtenir un Euro
 int main() {
-    int n;
-    cout<< "Combien de lignes : "<<endl;
-    cin>>n;
+    int count  = 0; // We keep a counter for the number of possibilities
 
-    for(int i=1; i<n; i++) {
+    //Let's try combinations of 2c, 5c, 10c coins
 
-        for(int j=0; j<n-i; j++) {
-            cout<<" ";
+    for(int num2c =0; num2c <= 50; ++num2c) {// at most 50 2c can be used
+
+        for(int num5c = 0; num5c <= 20; ++num5c) {//at most 20 5c can be used
+
+            for(int num10c = 0; num10c <= 10; ++num10c) {//at most 10 10c can be used
+
+
+                if(num2c *2 + num5c * 5 + num10c * 10 ==100) {
+                    cout<<"1 Euro = "<<setw(2)<<num2c << "x2c,";
+                    cout<<setw(2)<<num5c<< "x5c, ";
+                    cout<<setw(2)<<num10c<< "x10c"<<endl;
+                ++count;
+
+                }
+
+            }
+
         }
 
-        for(int k = 0; k<2*i-1; k++) {
-            cout<<"*";
-        }
-        cout<< endl;
     }
+
+    cout<< "There are " << count <<" different ways...";
 
 
     return 0;
-
 }
+
 
