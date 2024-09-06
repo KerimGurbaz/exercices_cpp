@@ -174,9 +174,10 @@ int main() {
         while(n>0);
  */
 
-
 //afficher toutes les manières possibles d'obtenir un Euro
-int main() {
+/*
+ *
+* int main() {
     int count  = 0; // We keep a counter for the number of possibilities
 
     //Let's try combinations of 2c, 5c, 10c coins
@@ -207,5 +208,28 @@ int main() {
 
     return 0;
 }
+ */
+
+int main() {
+
+    //Fibonacci
 
 
+   int n, first(1),second(2),sum;
+    cin>> n;
+    cout<<"saisir un entier svp "<<endl;
+    cout<<setw(4)<<first<<endl;
+    cout<<" ,"<<setw(2)<<second<<endl;
+    do {
+        sum = first + second;
+        if(sum>=n) {
+            break;
+        }
+        first = second;
+        second =sum;
+        cout<<" ,"<<setw(2)<<sum<<endl;
+    }
+   while(true);
+
+    return 0;
+}
