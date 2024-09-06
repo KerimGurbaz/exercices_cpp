@@ -236,9 +236,11 @@ int main() {
 int main() {
     int x = 7;
     int* ptr =&x;
+    *ptr = 17;
     cout<<x<<endl;
     cout<<&x<<endl;
     cout<<ptr<<endl;
     cout<<*ptr<<endl;
     cout<<&ptr<<endl;
+    cout<<x;
 }
