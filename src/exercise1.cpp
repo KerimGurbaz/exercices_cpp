@@ -235,10 +235,10 @@ int main() {
 
 int main() {
     int x = 7;
-    int* ptr = &x;
+    int* ptr =&x;
     cout<<x<<endl;
     cout<<&x<<endl;
     cout<<ptr<<endl;
     cout<<*ptr<<endl;
-
+    cout<<&ptr<<endl;
 }
