@@ -232,8 +232,8 @@ int main() {
     return 0;
 }
  */
-
-int main() {
+/*
+*int main() {
     int x = 7;
     int* ptr =&x;
     *ptr = 17;
@@ -243,4 +243,41 @@ int main() {
     cout<<*ptr<<endl;
     cout<<&ptr<<endl;
     cout<<x;
+}
+ *
+ */
+
+//la plus grande plus petit valeur
+int main() {
+    int n, min(20), max(0), min_count(1), max_count(1);
+
+    while(n!=-1) {
+
+        cout<<"donnez une note(-1 pour finir) : ";
+        cin>>n;
+
+        if(n >= max) {
+            if(max == n ) {
+                max_count++;
+            }else {
+                max_count==1;
+            }
+            max = n;
+        }
+        else if(n>=0 && n<=min) {
+            if(min==n) {
+                min_count++;
+            }else {
+                min_count =1;
+            }
+            min = n;
+        }
+    }
+
+    cout<<"Note maximale : "<<max<< " attribuée " << max_count<< " fois "<<endl;
+    cout<<"Note minimale : "<<min<< " attribuée " << min_count<< " fois "<<endl;
+
+
+
+    return 0;
 }
