@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-#include <iomanip>
+#include <iomanip> // setw(n)
 #include <string>
 
 /*
@@ -248,7 +248,8 @@ int main() {
  */
 
 //la plus grande plus petit valeur
-int main() {
+/*
+ * int main() {
     int n, min(20), max(0), min_count(1), max_count(1);
 
     while(n!=-1) {
@@ -278,6 +279,33 @@ int main() {
     cout<<"Note minimale : "<<min<< " attribuée " << min_count<< " fois "<<endl;
 
 
+
+    return 0;
+}
+ */
+
+int main() {
+
+    int row, col;
+
+    cout<<"    "<<setw(2)<<"I  ";
+    for(int i =1; i<=10; ++i) {
+        cout<<setw(2)<<i<<"  ";
+    }cout<<endl;
+    for(int i = 0; i<=15; i++) {
+       cout<<"---";
+    }
+    cout<<endl;
+    for(row=1; row<=10; ++row) {
+        cout<< setw(2)<<row;
+
+        for(col=1; col<=10; ++col) {
+
+            if(col==1)cout<<setw(2)<<"  I ";
+            cout<< setw(2)<<row*col<<"  ";
+        }
+        cout<<endl;
+    }
 
     return 0;
 }
