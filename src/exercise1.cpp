@@ -284,6 +284,7 @@ int main() {
 }
  */
 
+/*
 int main() {
 
     int row, col;
@@ -309,3 +310,18 @@ int main() {
 
     return 0;
 }
+ */
+
+int globalVar = 5;
+void func(int& y) {
+   y += ++globalVar;
+}
+
+int main() {
+    int x =10;
+    func(x);
+    cout<<globalVar<<endl;
+    cout<<x<<endl;
+}
+
+
