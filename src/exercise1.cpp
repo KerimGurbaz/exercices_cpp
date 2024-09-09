@@ -310,7 +310,7 @@ int main() {
 
     return 0;
 }
- */
+
 
 int globalVar = 5;
 void func(int& y) {
@@ -323,5 +323,97 @@ int main() {
     cout<<globalVar<<endl;
     cout<<x<<endl;
 }
+
+
+ */
+
+
+/*
+ * int fct(int r) {
+    return 2*r;
+}
+int main() {
+    int n, p=5;
+    n = fct(p);
+    cout<<"p = "<<p <<" n = "<<n;
+    return 0;
+
+}
+void doubleValue(int& x) {  // 'x' referans olarak geçer
+    x *= 2;  // Orijinal 'x' bu işlemle değişir
+}
+
+int main() {
+    int p = 5;
+    doubleValue(p);  // 'p' referans olarak geçer, bu yüzden orijinal değer değişir
+    cout << "p = " << p;  // 'p' artık 10 olur
+    return 0;
+}
+void f1(){
+    cout<<"Bonjour\n";
+    cout<<"\n";
+}
+
+void f2(int n) {
+
+    for(int i=0; i<n; i++) {
+       cout<<"Bonjour2\n";
+    }
+    cout<<"\n";
+}
+
+int f3(int n) {
+    for(int i =0; i<n ; i++) {
+        cout<<"Bonjour3\n";
+    }
+    return 0;
+}
+int main() {
+
+    f1();
+    f2(2);
+    f3(3);
+
+    return 0;
+}
+
+ */
+
+int n =10, q =2; //Global value
+
+int fct(int p); // Fonction prototipi
+void f(void );
+
+int main() {
+    int n =0, p=5;
+    n = fct(5);
+    cout<<"A; dans main, n = "<< n << ", p = "<<p<<" q = "<<q<<"\n";
+
+    f();// on appele fonk f.
+
+    return 0;
+}
+
+int fct ( int p) {
+    int q;
+    q = 2 * p + n;
+    cout<<"B; dans fct, n = "<< n << ", p = "<<p<<" q = "<<q<<"\n";
+    return q;
+}
+
+void f(void){
+    int p = q*n;
+    cout<<"C; dans f, n = "<< n << ", p = "<<p<<" q = "<<q<<"\n";
+}
+
+
+
+
+
+
+
+
+
+
 
 
