@@ -376,9 +376,6 @@ int main() {
 
     return 0;
 }
-
- */
-
 int n =10, q =2; //Global value
 
 int fct(int p); // Fonction prototipi
@@ -405,6 +402,86 @@ void f(void){
     int p = q*n;
     cout<<"C; dans f, n = "<< n << ", p = "<<p<<" q = "<<q<<"\n";
 }
+// function calculer
+    float f1(float a,float b, char c);
+    int main() {
+    float a, b, result ;
+        char c;
+        cin>>a>>b>>c;
+        result = f1(a, b , c);
+        cout<< result;
+
+    return 0;
+}
+
+   float f1(float a,float b, char c) {
+       if(c =='+' ) {
+          return a+b;
+       }else if (c =='-') {
+            return a - b;
+        }else if(c=='*') {
+            return a*b;
+        }else if(c== '/') {
+            if(b!=0) {
+                return a/b;
+            }else{
+                cout<<"Division by zero error !!!"<<endl;
+
+                return 0;
+            }
+            return a/b;
+        }else {
+            cout<< "invalid operator"<<endl ;
+        }
+
+
+   }
+
+   Switch-case calculator
+ */
+#include <iostream>
+using namespace std;
+
+int main() {
+    float a, b, result = 0;  // 'result' ile sonucu tutuyoruz
+    char c;
+
+    // Kullanıcıdan girişleri alıyoruz
+    cin >> a >> b >> c;
+
+    // Operatöre göre işlemleri gerçekleştiriyoruz
+    switch (c) {
+        case '+' :
+            result = a + b;
+        break;
+        case '-' :
+            result = a - b;
+        break;
+        case '*' :
+            result = a * b;
+        break;
+        case '/' :
+            if (b != 0) {
+                result = a / b;
+            } else {
+                cout << "Division by zero error!" << endl;
+                return 0;  // Sıfıra bölme hatasında program sona erer
+            }
+        break;
+        default:
+            cout << "Invalid operator!" << endl;
+        return 0;  // Geçersiz operatörde program sona erer
+    }
+
+    // Sonucu ekrana yazdırıyoruz
+    cout << "Result: " << result << endl;
+
+    return 0;  // Program başarıyla sona erer
+}
+
+
+
+
 
 
 
