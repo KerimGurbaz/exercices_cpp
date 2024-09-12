@@ -472,8 +472,11 @@ void f(void){
     cout << "Result: " << result << endl;
 
     return 0;  // Program başarıyla sona erer
+
+
+
 }
- */
+
 
 float calculer(float num1, float num2, char operation) {
 
@@ -509,6 +512,25 @@ int main() {
     return 0;
 }
 
+
+ */
+ int compt(0);
+void afficherNombreAppels() {
+
+    compt++;
+
+}
+
+
+int main() {
+    afficherNombreAppels();
+    afficherNombreAppels();
+    afficherNombreAppels();
+    afficherNombreAppels();
+
+  cout<<"Appel numero "<<compt<<endl;
+    return 0;
+}
 
 
 
