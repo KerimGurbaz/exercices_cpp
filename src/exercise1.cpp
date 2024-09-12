@@ -326,8 +326,6 @@ int main() {
 
 
  */
-
-
 /*
  * int fct(int r) {
     return 2*r;
@@ -438,11 +436,8 @@ void f(void){
    }
 
    Switch-case calculator
- */
-#include <iostream>
-using namespace std;
 
-int main() {
+   int main() {
     float a, b, result = 0;  // 'result' ile sonucu tutuyoruz
     char c;
 
@@ -478,6 +473,48 @@ int main() {
 
     return 0;  // Program başarıyla sona erer
 }
+ */
+
+float calculer(float num1, float num2, char operation) {
+
+    switch(operation) {
+
+        case '+' :
+            return num1 + num2;
+        case '-' :
+            return num1- num2;
+        case '*' :
+            return num1 * num2;
+        case '/':
+            return num1 / num2; //On suppose qu'il n'y aura pas de division par zéro.
+        default:
+            return num1 +num2; // Par défaut, une addition.
+    }
+}
+
+int main() {
+    // varianlers pour stocker les deux nombres.
+    float nombre1, nombre2;
+
+    //Lecture des deux nombres;
+
+    cout<< " Entre le premier nombre : " ;
+    cin>> nombre1;
+    cout<< " Entre le deuxième nombre : " ;
+    cin>> nombre2;
+    cout<<"Addition : "<<calculer(nombre1, nombre2, '+') << endl;
+    cout<<"Soustraction : "<<calculer(nombre1, nombre2, '-') << endl;
+    cout<<"Multiplication : "<<calculer(nombre1, nombre2, '*') << endl;
+    cout<<"Division : "<<calculer(nombre1, nombre2, '/') << endl;
+    return 0;
+}
+
+
+
+
+
+
+
 
 
 
