@@ -511,9 +511,6 @@ int main() {
     cout<<"Division : "<<calculer(nombre1, nombre2, '/') << endl;
     return 0;
 }
-
-
- */
  int compt(0);
 void afficherNombreAppels() {
 
@@ -531,6 +528,51 @@ int main() {
   cout<<"Appel numero "<<compt<<endl;
     return 0;
 }
+// fonction qui affiche combien de fois  elle a été appelée
+
+int afficherNombreAppeles() {
+    static int compteur = 0;
+    compteur++;
+
+    return compteur;
+
+}
+
+int main() {
+   int i;
+    for(i=0; i<5; i++) {
+        afficherNombreAppeles();
+    }
+
+    cout<<afficherNombreAppeles()<<endl;
+
+    return 0;
+}
+//il est pair, multiple 3 et-ou multiple de 6;
+void f1(int) {
+        cout << "il est multiple de 3\n";
+}
+void f2(int ) {
+    cout<< "il est pair"<<endl;
+    cout<< "il est multiple de 3 "<<endl;
+    cout<< "il est divisible par 6 "<<endl;
+}
+
+int main() {
+    int x;
+    cout<< "Donnez un entier : \n";
+    cin>> x;
+    if (x%2 ==0 && x%3 == 0) {
+        f2(x);
+    } else if(x%3 == 0) {
+        f1(x);
+    }
+
+    return 0;
+}
+ */
+
+
 
 
 
