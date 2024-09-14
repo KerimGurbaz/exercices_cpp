@@ -586,7 +586,16 @@ int main() {
 
 
  */
+inline int fct(char c, int n);
 
+int main() {
+    int n = 150, p;
+    char c = 's';
+    p = fct(c,n);
+
+    cout<< "fct (\'" << c << "\', " << n << ") vaut : " << p << endl;
+    return 0 ;
+}
 inline int fct(char c, int n) {
     int res;
 
@@ -601,13 +610,6 @@ inline int fct(char c, int n) {
     return res;
 }
 
-int main() {
-
-    int n = 150
-
-
-    return 0 ;
-}
 
 
 
