@@ -570,10 +570,44 @@ int main() {
 
     return 0;
 }
+void ajuter( int valeur,  int &variable) {
+    variable += valeur;
+}
+int main() {
+    int n(10), p(3);
+    cout<< "Avant : "<<n<<endl;
+
+    ajuter(2*p+1, n);
+
+    cout<< "Apres : "<<n<< endl;
+}
+
+
+
+
  */
 
+inline int fct(char c, int n) {
+    int res;
+
+    if(c=='a') {
+        res = n +c;
+    }else if(c=='s') {
+        res = n - c;
+    }else {
+        res = n * c;
+    }
+
+    return res;
+}
+
+int main() {
+
+    int n = 150
 
 
+    return 0 ;
+}
 
 
 
