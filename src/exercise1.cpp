@@ -684,9 +684,6 @@ int main() {
 
     return 0;
 }
-
- */
-
 int main()
 {
     enum color_type {red, orange, yellow, green, blue, violet};
@@ -696,8 +693,81 @@ int main()
     cout << shirt << " " << pants << endl;
     return 0;
 }
+//prioritiy and associativity
+int main() {
+int i = 5, j = 6, k = 7, n = 3;
+cout << i + j * k - k % n << endl;
+cout << i / n << endl;
+
+    return 0;
+}
+
+// short circuit evaluation
+int main () {
+
+    int found = 0, count =5;
+    if(found || --count == 4)
+        cout<<"danger"<< endl;
+    cout<< "count = "<< count << endl;
 
 
+    return 0;
+}
+str sizeof()
+#include<cstring>
+int main() {
+    char ch;
+    char title[] ="Titanic";
+
+    ch=title[1];
+    title[3] =ch;
+
+    cout<<title<<endl;
+    cout<<ch<<endl;
+    cout<<strlen(title)<<endl;
+    cout<< sizeof(title)<<"\t"<<sizeof(title[0])<<endl;
+
+
+    return 0;
+}int main() {
+    const int LENGTH = 21;
+    char message[LENGTH];
+
+    cout << "Enter a sentence on the line below:" << endl;
+    cin >> message;  // Girdiyi alıyoruz
+
+    cout << "Stored message: " << message << endl;  // Ekrana yazdırıyoruz
+
+    // Gerçek uzunluğu göstermek için
+    for (int i = 0; i < LENGTH; i++) {
+        cout << "message[" << i << "] = " << message[i] << endl;
+    }
+
+    return 0;
+}
+
+
+ */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    const int LENGTH = 21;
+    char message[LENGTH];
+
+    cout << "Enter a sentence on the line below:" << endl;
+    cin.getline(message, LENGTH);  // 20 karakteri geçmeyecek şekilde girdi al
+
+    cout << "Stored message: " << message << endl;
+
+    // Her bir karakteri ayrı ayrı göster
+    for (int i = 0; i < LENGTH; i++) {
+        cout << "message[" << i << "] = " << message[i] << endl;
+    }
+
+    return 0;
+}
 
 
 
