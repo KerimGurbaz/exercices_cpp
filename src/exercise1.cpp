@@ -745,10 +745,6 @@ int main() {
 
     return 0;
 }
-
-
- */
-
 #include <iostream>
 using namespace std;
 
@@ -768,6 +764,20 @@ int main() {
 
     return 0;
 }
+int main() {
+
+    const int LENGTH = 11;
+    char message[LENGTH];
+
+    cout<<"Enter a sentences on the line below.";
+    cin.getline(message, LENGTH, '.');
+
+    cout<< message<<endl;
+    return 0;
+}
+ */
+
+
 
 
 
