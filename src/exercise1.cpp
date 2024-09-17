@@ -782,7 +782,9 @@ int main() {
     cout << message << endl;
 
     return 0;
-}int main() {
+}
+
+int main() {
 
      const int LENGTH = 21 ;
      char message[LENGTH];
@@ -807,7 +809,29 @@ int main() {
  }
  */
 
+int main() {
 
+    const int LENGTH = 11 ;
+    char message[LENGTH];
+    int i ;
+
+    cout << "Enter a sentences on the line below. "<< endl;
+    cin >>message[3];
+
+    i=0;
+    while(i<LENGTH - 1 && message[i] != '\n') {
+        ++i;
+        cin.get(message[i]);
+    }
+
+    message[i]= '\0' ; //replace '\n' if that was read.
+    // Otherwise replace the last character read.
+
+
+    cout << message << endl;
+
+    return 0;
+}
 
 
 
