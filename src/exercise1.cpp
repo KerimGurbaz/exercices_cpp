@@ -1,7 +1,10 @@
-#include <iostream>
+/*
+ *  #include <iostream>
 using namespace std;
 #include <iomanip> // setw(n)
 #include <string>
+ */
+
 
 /*
 * int main() {
@@ -835,12 +838,20 @@ int main() {
 
 
 
+/*
+ * #include <iostream>
+#include <cstdlib>
+using namespace std;
+int main(){
+    cout<<"Hello world !" << endl;
+    cout << "Fin de programme" << endl;
+    return EXIT_SUCCESS;
 
-int main() {
+    }
+
+ */
 
 
-    return 0;
-}
 
 
 

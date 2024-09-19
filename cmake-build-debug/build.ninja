@@ -55,6 +55,12 @@ build CMakeFiles/exercise1_exe.dir/src/exercise1.cpp.obj: CXX_COMPILER__exercise
   OBJECT_DIR = CMakeFiles\exercise1_exe.dir
   OBJECT_FILE_DIR = CMakeFiles\exercise1_exe.dir\src
 
+build CMakeFiles/exercise1_exe.dir/src/presentation.cpp.obj: CXX_COMPILER__exercise1_exe_unscanned_Debug C$:/Users/Krm/CLionProjects/exercices_cpp/src/presentation.cpp || cmake_object_order_depends_target_exercise1_exe
+  DEP_FILE = CMakeFiles\exercise1_exe.dir\src\presentation.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\exercise1_exe.dir
+  OBJECT_FILE_DIR = CMakeFiles\exercise1_exe.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target exercise1_exe
@@ -63,7 +69,7 @@ build CMakeFiles/exercise1_exe.dir/src/exercise1.cpp.obj: CXX_COMPILER__exercise
 #############################################
 # Link the executable exercise1_exe.exe
 
-build exercise1_exe.exe: CXX_EXECUTABLE_LINKER__exercise1_exe_Debug CMakeFiles/exercise1_exe.dir/src/exercise1.cpp.obj
+build exercise1_exe.exe: CXX_EXECUTABLE_LINKER__exercise1_exe_Debug CMakeFiles/exercise1_exe.dir/src/exercise1.cpp.obj CMakeFiles/exercise1_exe.dir/src/presentation.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\exercise1_exe.dir
