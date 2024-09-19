@@ -1,9 +1,9 @@
 //
 // Created by Krm on 19/09/2024.
 //
-#include <iostream>
-#include <cstdlib>
-using namespace std;
+
+/*
+ * using namespace std;
 
 int main() {
 
@@ -12,3 +12,19 @@ int main() {
 
     return EXIT_SUCCESS;
 }
+ */
+#include <iostream>
+#include <cstdlib>
+
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main() {
+
+    cout<< "Hello "<< endl;
+
+    return EXIT_SUCCESS;
+
+}
+
