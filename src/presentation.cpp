@@ -13,8 +13,8 @@ Remarque(s): C'est mon premier jour à l'école avec un programme en C++..
 --------------------------- */
 
 
-
-  int main() {
+/*
+ * int main() {
 
     cout << "*****************************" << endl;
     cout << "*      Presentation         *" << endl;
@@ -27,5 +27,7 @@ Remarque(s): C'est mon premier jour à l'école avec un programme en C++..
 
     return 0;
 }
+ */
+
 
 
