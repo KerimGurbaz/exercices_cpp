@@ -807,9 +807,8 @@ int main() {
 
      return 0;
  }
- */
 
-int main() {
+ int main() {
 
     const int LENGTH = 11 ;
     char message[LENGTH];
@@ -832,9 +831,16 @@ int main() {
 
     return 0;
 }
+ */
 
 
 
+
+int main() {
+
+
+    return 0;
+}
 
 
 
