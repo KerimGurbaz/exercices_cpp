@@ -64,8 +64,6 @@ return 0;
 
 //float sqr(float x); il s'agit d'une déclaration.
 }
-
- */
 #include <iostream>
 using namespace std;
 
@@ -82,4 +80,34 @@ using namespace std;
         cout << "Dereferenced value of ptr: " << *ptr << endl;    // 'A' yazdırılır.
 
     return 0;
+}
+ */
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    //int i(2), j(3), k(0);
+    //k=i += j++ +2;
+
+   // int i(1), j(17), k(5);
+  //  i=(k = j % k )+ 3 ;
+
+   // int i(1), j(17), k(5);
+   // i=11 + j/4 +3;
+
+    //int i(1), j(17), k(5);
+    //i= k/2 + (j+=1);
+
+int i(1), j(0), k(3);
+    i= ++j and k--;
+
+
+    cout<<"i = " << i<<endl;
+    cout<<"j = " << j<<endl;
+    cout<<"k = " << k<<endl;
+
+    return 0;
+
 }
