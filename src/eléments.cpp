@@ -123,9 +123,6 @@ int main() {
     cout<<x<<endl;
     cout<<y<<endl;
 }
- */
-#include <iostream>
-using namespace std;
 
 //combien font 1729 centimes en francs?
 
@@ -153,3 +150,63 @@ int main() {
 
     return 0;
 }
+
+int main() {
+    // Déclaration des variables
+
+    float fraisExpedition =10.0;
+    string pays, etat;
+    pays = "USA";
+    etat = "AK";
+
+    if(pays != "USA" || etat =="AK" || etat =="HI") {
+        fraisExpedition = 20.0;
+
+        // Affichage du résultat
+        cout<< " Frais d'éxpédition : $  " << fraisExpedition << endl;
+
+
+        return 0;
+    }
+}
+ int main() {
+    int number;
+    cout<< " Entrer un number svp ? " << endl;
+    cin >> number;
+
+    if(number < 0) {
+        cout <<" votre number est negatif" << endl;
+    }
+    else if(number > 0){
+        cout <<" votre number est positif" << endl;
+    }
+    else
+        cout <<" votre number est zéro" << endl;
+
+
+    return 0;
+}
+ */
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+//
+
+int main() {
+int i(5);
+
+    for(int i=0; i<10; ++i){
+
+        cout<<i<<endl;
+
+    }
+    cout<<i<<endl;
+
+    return 0 ;
+}
+
+
+
+
