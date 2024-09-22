@@ -242,10 +242,6 @@ int main() {
 
     return 0;
 }
- */
-#include <iostream>
-#include <string>
-using namespace std;
 
 // Chaines de carècteres
 int main() {
@@ -258,6 +254,81 @@ int main() {
 
     return 0;
 }
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    double a, b;  // Utiliser double pour permettre les opérations sur les décimales
+    char opt;
+
+    cout << "Premier nombre s'il vous plaît : ";
+    cin >> a;
+    cout << "Deuxième nombre s'il vous plaît : ";
+    cin >> b;
+    cout << "Saisir une des opérations : +, -, *, / : ";
+    cin >> opt;
+
+    switch (opt) {
+        case '+':
+            cout << "Résultat : " << a + b << endl;  // Affiche le résultat
+        break;
+
+        case '-':
+            cout << "Résultat : " << a - b << endl;  // Affiche le résultat
+        break;
+
+        case '*':
+            cout << "Résultat : " << a * b << endl;  // Affiche le résultat
+        break;
+
+        case '/':
+            if (b != 0) {  // Vérifie si b est différent de zéro
+                cout << "Résultat : " << a / b << endl;  // Affiche le résultat
+            } else {
+                cout << "Erreur : Division par zéro !" << endl;  // Message d'erreur
+            }
+        break;
+
+        default:
+            cout << "Votre opération n'est pas correcte." << endl;  // Message d'erreur
+    }
+
+    return 0;
+}
+int main() {
+    int num, res(1);
+    cin>> num;
+
+     while(num>0) {
+         res *=num;
+         num--;
+     }
+
+    cout<< res<<endl;
+
+    return 0;
+}
+ */
+
+#include <iostream>
+using namespace std;
+
+// Trouver le plus grand nombre dans un tableau;
+int main() {
+    int numbers[5] = {111,334,643,765,324};
+    int my_max(0);
+    int size = sizeof(numbers)/ sizeof(numbers[0]);
+
+    for(int i =0 ; i<size ; i++) {
+        my_max =  (my_max <= numbers[i]) ? numbers[i] : my_max;
+    }
+    cout<< "maximum number est :"<< my_max;
+
+    return 0;
+}
+
+
 
 
 
