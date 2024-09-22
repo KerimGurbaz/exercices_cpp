@@ -81,26 +81,22 @@ using namespace std;
 
     return 0;
 }
- */
-
-#include <iostream>
-using namespace std;
 
 int main() {
-
     //int i(2), j(3), k(0);
     //k=i += j++ +2;
 
-   // int i(1), j(17), k(5);
-  //  i=(k = j % k )+ 3 ;
+    // int i(1), j(17), k(5);
+    //  i=(k = j % k )+ 3 ;
 
-   // int i(1), j(17), k(5);
-   // i=11 + j/4 +3;
+    // int i(1), j(17), k(5);
+    // i=11 + j/4 +3;
 
     //int i(1), j(17), k(5);
     //i= k/2 + (j+=1);
 
-int i(1), j(0), k(3);
+    /*
+     *    int i(1), j(0), k(3);
     i= ++j and k--;
 
 
@@ -110,4 +106,50 @@ int i(1), j(0), k(3);
 
     return 0;
 
+}
+     /*
+
+
+    int x =10;
+    int y =19;
+    x=y;
+
+    int *ptr = &x;
+
+    //cout<<*ptr<<endl;
+    //cout<<x<<endl;
+    //cout<<&x<<endl;
+    //cout<<ptr<<endl;
+    cout<<x<<endl;
+    cout<<y<<endl;
+}
+ */
+#include <iostream>
+using namespace std;
+
+//combien font 1729 centimes en francs?
+
+
+int main() {
+    // Declaration  de la variable
+    int centimes =1792;
+    double a;
+    float b;
+    a=2.12;
+    b=2.43;
+    bool resultat1= a<b;
+    cout<< resultat1<<endl;
+    cout<< a<<endl;
+    cout<< b<<endl;
+
+
+    //conversion en francs ( 1 franc = 100 centimes)
+    int francs = centimes / 100 ; //division entière pour obtenir les francs.
+    int rest_centimes = centimes  % 100 ;
+
+    //affichage du resultat
+    cout << centimes <<" centimes font " << francs << " francs et " << rest_centimes<< " centimes.";
+
+
+    return 0;
 }
