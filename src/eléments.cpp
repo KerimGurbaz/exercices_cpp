@@ -186,13 +186,7 @@ int main() {
 
     return 0;
 }
- */
-#include <iostream>
-#include <string>
-using namespace std;
-
-
-//
+//Boucles et if-else
 
 int main() {
 int i(5);
@@ -206,6 +200,67 @@ int i(5);
 
     return 0 ;
 }
+// renvoie le carré
+int sqr(int x) {
+    return x*x;
+}
+
+int main() {
+
+    cout<< "Saisir un nombre svp : ";
+    int a;
+    cin>> a;
+
+    int result = sqr(a);
+
+   cout<< result<<endl;
+    return 0;
+}
+//Tableaux (Arrays)
+int main() {
+
+    int nombres[5] = {1,2,3,4,5};
+
+    for(int i = 0; i < 5 ; i++ ) {
+
+        cout << nombres[i];
+        if(i !=4) {
+          cout<<" - ";
+       }
+    }
+    cout<<endl;
+
+    return 0;
+}
+// Manipulation de chaines
+int main() {
+    cout<< "Saisir un texte : "<<endl;
+    string str;
+    getline(cin, str);
+
+    cout<<"longeur de votre text  est: "<< str.length() << endl;
+
+    return 0;
+}
+ */
+#include <iostream>
+#include <string>
+using namespace std;
+
+// Chaines de carècteres
+int main() {
+
+    char str[] = "HEIG-VD";
+
+    for(int i =0; i<sizeof(str); i++) {
+        cout<<str[i]<<endl;
+    }
+
+    return 0;
+}
+
+
+
 
 
 
