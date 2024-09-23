@@ -351,12 +351,6 @@ int main() {
 
     return 0;
 }
-
- */
-#include <iostream>
-#include <string>
-using namespace std;
-
 int main() {
     //string a = "Test";
     //string b = "Case";
@@ -369,6 +363,28 @@ int main() {
 
     return 0;
 }
+// manipulation de chaines avec des pointeurs.
+int main() {
+
+    string str1 = "hello mes amis!!" ;
+
+    string* ptr = &str1;
+    char str_p = 'Z';
+
+    str1[0] = str_p;
+
+    cout<< str1<<endl;
+    cout<< *ptr<<endl;
+    return 0;
+}
+
+ */
+#include <iostream>
+#include <string>
+using namespace std;
+
+
+
 
 
 
