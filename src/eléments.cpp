@@ -358,13 +358,14 @@ int main() {
 using namespace std;
 
 int main() {
-    string a = "Test";
-    string b = "Case";
-    int num = 42;
+    //string a = "Test";
+    //string b = "Case";
+    int num = 037;
 
-    a += " - " + b + to_string(num);
+   // a += " - " + b + to_string(num);
 
-    cout << a << endl;
+
+    cout << num << endl;
 
     return 0;
 }
