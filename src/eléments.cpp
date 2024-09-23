@@ -309,11 +309,6 @@ int main() {
 
     return 0;
 }
- */
-
-#include <iostream>
-using namespace std;
-
 // Trouver le plus grand nombre dans un tableau;
 int main() {
     int numbers[5] = {111,334,643,765,324};
@@ -327,6 +322,60 @@ int main() {
 
     return 0;
 }
+//Chaines de caractères et accès aux éléments
+int main() {
+
+    string str1 = "Kerim";
+string str2 = "Gurbaz";
+
+str1[1]= str2[1];
+
+cout<< str1<<endl;
+
+    return 0;
+}
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+
+    string str1 = "HEIG";
+    string str2 = "VD";
+    int num1= 1234;
+
+    str1 += " - " + str2 + to_string(num1);
+
+    cout<< str1 <<endl;
+
+
+    return 0;
+}
+
+ */
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string a = "Test";
+    string b = "Case";
+    int num = 42;
+
+    a += " - " + b + to_string(num);
+
+    cout << a << endl;
+
+    return 0;
+}
+
+
+
+
+
+
+
+
 
 
 
