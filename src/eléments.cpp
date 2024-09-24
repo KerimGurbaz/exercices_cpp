@@ -389,12 +389,6 @@ int main() {
 
     return 0;
 }
-
- */
-#include <iostream>
-#include <string>
-using namespace std;
-
 void func(int &a, int *b) {
 
     a+=*b;
@@ -412,6 +406,56 @@ int main() {
 
     return 0;
 }
+void swapByPointer(int *a,  int *b) {
+    int temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+void swapByReference(int &a, int &b) {
+    int temp = a;
+    a =b;
+    b =temp;
+}
+int main() {
+    int x = 5, y =10;
+
+    swapByPointer( &x,  &y);
+    cout<< "After swapByPointer: x = " << x << ", y = " << y<<endl;
+
+    swapByReference(x,y);
+
+    cout << "After swapByReference : x = " << x << " , y = "<< y <<endl;
+
+
+
+    return 0;
+}
+ */
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int arr[] ={2,4,6,8,10};
+    int* ptr = arr;
+
+    cout <<*ptr<< endl;
+    ++ptr;
+    cout <<*ptr<< endl;
+    ptr +=2;
+    cout <<*ptr + 19 << endl;
+
+
+
+
+
+
+    return 0;
+}
+
+
+
 
 
 
