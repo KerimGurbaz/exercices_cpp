@@ -377,12 +377,6 @@ int main() {
     cout<< *ptr<<endl;
     return 0;
 }
-
- */
-#include <iostream>
-#include <string>
-using namespace std;
-
 int main() {
     int n(7);
 
@@ -392,6 +386,29 @@ int main() {
     else
         cout<< "The number is ----"<< endl;
 
+
+    return 0;
+}
+
+ */
+#include <iostream>
+#include <string>
+using namespace std;
+
+void func(int &a, int *b) {
+
+    a+=*b;
+    *b = a-*b;
+    a -=*b;
+}
+
+int main() {
+
+    int x =10;
+    int y = 20;
+    func(x, &y);
+
+    cout<< " x = " << x << " y = " << y<< endl;
 
     return 0;
 }
