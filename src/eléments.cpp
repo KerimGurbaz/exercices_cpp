@@ -610,11 +610,63 @@ int main() {
     return 0;
 }
 
+int main() {
+    int n, k=5;
+    n = (100 % k ? k+1 : k-1);
+
+    cout<<"n = "<<n<< " k= "<< k<< endl;
+    return 0;
+}
+
+int main() {
+
+    cout << "Here's a list of the ASCII values of all the upper"
+     << " case letters.\n";
+    char letter = 'A';
+    while (letter <= 'Z') {
+        cout << letter << " " << int(letter) << endl;
+        letter++;
+    }
+
+
+    return 0;
+}
+int myfunc(int first, int last) {
+    int sum =0;
+    if(first<last) {
+        for(int i = first; i<=last; i++) {
+             sum += i ;
+        }
+    }else if(first > last) {
+        for(int i = last; i <= first; i++) {
+            sum += i;
+            cout<<i<<endl;
+        }
+    }else {
+        cout<<"First and last are equals : "<<first<<endl;
+    }
+    return sum;
+}
+
+int main() {
+    int first, last;
+    cin>>first>>last;
+
+    cout<< myfunc(first, last) <<endl;
+
+    return 0;
+}
+
  */
 #include <iostream>
 #include <limits>
 #include <string>
+
+
 using namespace std;
+
+
+
 
 
 
