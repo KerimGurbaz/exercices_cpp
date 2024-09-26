@@ -509,12 +509,6 @@ int main() {
 
     return 0;
 }
-
- */
-#include <iostream>
-#include <string>
-using namespace std;
-
 int main() {
     int n(-3);
 
@@ -527,6 +521,111 @@ int main() {
 
     return 0;
 }
+
+int main() {
+
+    int n = 10;
+
+    while(n>0) {
+
+          n /=2;
+    cout<<n*n<<endl;
+    }
+    return 0;
+}
+int main() {
+
+   int arr[3] ={1,2,3};
+    int *ptr =arr;
+    *(ptr+1) = 20;
+    for(int i=0; i<3; i++) {
+        cout<<arr[i]<<endl;
+    }
+
+
+    return 0 ;
+}
+int main() {
+    int var =30;
+    int *ptr = &var;
+    int **pptr = &ptr;
+    **pptr += 10;
+
+    cout<<var<<endl;
+    cout<<&var<<endl;
+
+    return 0;
+}
+int main() {
+    float income;
+    char choice;
+    do {
+        if(!(cin >> income)) {
+            cout<<"Entrée invalide. Veuillez saisir une valeur numerique. ";
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');//ignore les caractères restant
+            continue; // Recommence la boucle.
+        }
+
+        if(income<0.0)
+            cout<<"Vous accumulez davantage de dettes chaque mois."<<endl;
+        else if(income < 1200.00)
+            cout<< "Vous vivez dans en dessous du seuil de pauvraté."<<endl;
+        else if(income < 2500.00)
+            cout<<"Vous vivez dans un confort modéré."<<endl;
+        else
+            cout<<"vous êtes bien loti.";
+
+        cout<< "Voulez-vous entrer un autre revenu ?(y/n)"<<endl;
+
+    }while(choice =='y' || choice=='Y');
+
+    return 0;
+
+}
+int main() {
+    int n(7);
+    cout<<"Enter an integer : ";
+ //   cin >> n;
+
+    if(n<10)
+        cout<<"Less than 10";
+    else if(n>5)
+        cout<< "greater than 5";
+    else
+        cout<<"not interesting"<< endl;
+
+    return 0;
+}
+
+int main() {
+
+    int n = 5;
+    if (n == 0) // NOTE THE OPERATOR!!!
+        cout << "n is zero" << ".\n";
+    else
+        cout << "n is not zero \n";
+    cout << "The square of n is " << n * n << ".\n";
+
+    return 0;
+}
+
+ */
+#include <iostream>
+#include <limits>
+#include <string>
+using namespace std;
+
+
+
+
+
+
+
+
+
+
+
 
 
 
