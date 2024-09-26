@@ -426,19 +426,19 @@ int main() {
     swapByReference(x,y);
 
     cout << "After swapByReference : x = " << x << " , y = "<< y <<endl;
-
-
-
     return 0;
 }
- */
-#include <iostream>
-#include <string>
-using namespace std;
 
 int main() {
     int arr[] ={2,4,6,8,10};
     int* ptr = arr;
+
+    int x = 10;
+    int * const ptr1= &x;
+    *ptr1 = 20; // valid
+
+    cout<<ptr1<< endl;
+    cout<<x<< endl;
 
     cout <<*ptr<< endl;
     ++ptr;
@@ -453,6 +453,82 @@ int main() {
 
     return 0;
 }
+
+void printValue(int *ptr) {
+    if(ptr != nullptr) {
+        cout<< "Value : " << *ptr <<endl;
+    }
+    else {
+       cout<<" Pointer is null..." << endl;
+   }
+}
+
+int main() {
+    int p =12;
+    int *ptr1 = &p;
+    printValue(ptr1) ;
+    return 0;
+}
+int main() {
+
+    char c = 'A';
+    char * ptr = &c;
+
+    cout <<" Valeur de c : " << c << endl;
+    cout << "Address de c : " << static_cast<void*>(ptr) << endl;
+    cout << " Valeur pointée par ptr " << *ptr << endl;
+
+
+    return 0;
+}
+
+int main() {
+
+    const char c = 'A';
+    const char * const ptr = &c;
+
+
+    cout <<" Valeur de c : " << c << endl;
+    //cout << "Address de c : " << static_cast<void*>(ptr) << endl;
+    cout << " Valeur pointée par ptr " << *ptr << endl;
+
+
+
+    return 0;
+}
+
+void func(double *a, double *b){
+        return a*b;
+    };
+int main() {
+
+    double a, b;
+    double *ptr1 =&a;
+    double *ptr2 =&b;
+    func(ptr1, ptr2);
+
+    return 0;
+}
+
+ */
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    int n(-3);
+
+    if(n<10)
+        if(n>0)
+            cout<< "The number is positive"<< endl;
+    else
+        cout<<" The number is ---" << endl;
+
+
+    return 0;
+}
+
+
 
 
 
