@@ -656,14 +656,63 @@ int main() {
 
     return 0;
 }
+int main() {
+
+    int n = 5;
+    char c = 5;
+    cout<< char(n) + c <<endl;
+    cout<<char(n)<<endl;
+
+
+    return 0;
+}
+int main() {
+
+    int n = 5;
+    int y = n++ * 2 + ++n;
+    cout<< n<< endl;
+    cout<<y<<endl;
+    return 0;
+}
+int main() {
+int x = 3;
+    x *= x +=2;
+    cout<<x;
+
+    return 0;
+}
 
  */
 #include <iostream>
 #include <limits>
 #include <string>
-
-
 using namespace std;
+
+int main() {
+
+    const int BASE =50;
+    int num;
+    cin>> num;
+
+    switch(num) {
+
+        case BASE:
+            cout<<"BASE"<< endl;
+            break;
+        case BASE + 10:
+            cout<< "Base plus dix"<< endl;
+            break;
+        default:
+            cout<<"Autre valeur..."<< endl;
+            break;
+    }
+
+
+    return 0;
+}
+
+
+
 
 
 
