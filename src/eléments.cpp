@@ -682,12 +682,6 @@ int x = 3;
     return 0;
 }
 
- */
-#include <iostream>
-#include <limits>
-#include <string>
-using namespace std;
-
 int main() {
 
     const int BASE =50;
@@ -710,6 +704,42 @@ int main() {
 
     return 0;
 }
+ */
+#include <iostream>
+#include <limits>
+#include <string>
+using namespace std;
+
+int main() {
+    int age;
+    cout<<"Entrez votre âge : ";
+    cin>> age;
+
+    switch (age/10) {
+
+        case 0:
+        case 1:
+            cout<< "Enfant" << endl;
+            break;
+        case 2:
+        case 3:
+        case 4:
+            if(age <=17)
+                cout<<"Ado"<< endl;
+            else
+                cout<<"Adulte" << endl;
+            break;
+        default:
+            if(age>=65)
+                cout<< "Senior"<< endl;
+            else
+                cout<< "Adulte" <<endl;
+            break;
+
+    }
+    return 0;
+}
+
 
 
 
