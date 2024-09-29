@@ -704,41 +704,80 @@ int main() {
 
     return 0;
 }
+
+int main() {
+    int age;
+
+
+    char c;
+
+    do {
+        cout<<"Entrez votre âge : ";
+        cin>> age;
+        switch (age/10) {
+            case 0:
+            case 1:
+                if(age>=13 && age<=17)
+                    cout<<"Ado"<< endl;
+                else
+                    cout<< "Enfant" << endl;
+            break;
+            case 2:
+            case 3:
+            case 4:
+                if(age>=13 && age<=17)
+                    cout<<"Ado"<< endl;
+                else
+                    cout<<"Adulte" << endl;
+            break;
+            default:
+                if(age>=65)
+                    cout<< "Senior"<< endl;
+                else
+                    cout<< "Adulte" <<endl;
+            break;
+        }
+        cout<< "tekrar sorgu yapmak ister misin ? Y/N"<<endl;
+        cin>>c;
+
+
+    } while(c=='y' || c=='Y');
+
+    return 0;
+}
+
+
  */
 #include <iostream>
 #include <limits>
 #include <string>
 using namespace std;
+#include <iostream>
+using namespace std;
 
-int main() {
-    int age;
-    cout<<"Entrez votre âge : ";
-    cin>> age;
+#include <iostream>
+using namespace std;
 
-    switch (age/10) {
-
-        case 0:
-        case 1:
-            cout<< "Enfant" << endl;
-            break;
+int main()
+{
+    int n = 3;
+    const int a = 1;
+    switch (n)
+    {
+        case a:
+            cout << "Un\n";
+        break;
         case 2:
+            cout << "Deux\n";
+        break;
         case 3:
-        case 4:
-            if(age <=17)
-                cout<<"Ado"<< endl;
-            else
-                cout<<"Adulte" << endl;
-            break;
+            cout << "Trois\n";
+        break;
         default:
-            if(age>=65)
-                cout<< "Senior"<< endl;
-            else
-                cout<< "Adulte" <<endl;
-            break;
-
+            cout << "Autre\n";
     }
-    return 0;
 }
+
 
 
 
