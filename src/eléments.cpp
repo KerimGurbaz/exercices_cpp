@@ -841,13 +841,6 @@ int main() {
     }
     return 0;
 }
- */
-#include <iostream>
-#include <limits>
-#include <string>
-using namespace std;
-
-
 int main() {
     int count = 10;
     while (count != 0) {
@@ -857,6 +850,134 @@ int main() {
     cout << "Fin du compte à rebours !" << endl;
     return 0;
 }
+void printArray(int* arr, int size) {
+    int index = 0;
+    while(index < size) {
+        cout << " Element " << index << " : "<<*(arr + index)<< endl;
+        index++;
+    }
+}
+
+int main() {
+    int myArray[] = {5,10,15,20,25};
+    int size = sizeof(myArray) / sizeof(myArray[0]);
+
+    printArray(myArray, size);
+
+    return 0;
+}
+int main() {
+    int n;
+
+    do {
+        cout<< "Veuilez saisir un nombre entier positif : " ;
+        cin >> n ;
+
+        if(cin.fail() || n<=0 ) {
+            cout << "Entrée invalide. Essayez de nouveau." << endl;
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+        }
+
+
+
+    }while(n<=0);
+
+    cout << "Vous avez saisi : "<< n <<endl;
+
+    return 0;
+}
+//pair and impair
+int main() {
+
+    for(int i = 1; i<=20 ;i++ ) {
+        if(i%2) {
+            continue;
+        }
+        cout<< i<<endl;
+    }
+    return 0;
+}
+void incrementArray(int* arr, int size) {
+    int index = 0;
+    while(index < size) {
+        *(arr + index) +=1;
+        index++;
+    }
+}
+
+void printArray(int* arr, int size) {
+    int index =0;
+    while(index < size) {
+        cout<< "Element" << index << " : " << *(arr+index) << endl;
+        index++;
+    }
+
+}
+
+int main() {
+
+    int myArray[] = {5,10,15,20,25};
+    int size = sizeof(myArray)/ sizeof(myArray[0]);
+
+    cout<<"Tableau avant incrémentation : "<<endl;
+    printArray(myArray,size);
+
+    incrementArray(myArray,size);
+
+    cout << "\nTableau apres incrementation : "<<endl;
+    printArray(myArray, size);
+
+
+    return 0;
+}
+
+
+ */
+#include <iostream>
+#include <limits>
+#include <string>
+using namespace std;
+
+//Fonction pour afficher le tableau
+void printArray(int *arr,int size) {
+    int index = 0;
+
+    while(index < size) {
+        cout<< arr[index]<< " ";
+        index++;
+    }
+    cout<<'\n';
+}
+
+//Fonction pour doubler les valeurs du tableau.
+void doubleValue(int* arr,int size) {
+    int index = 0;
+    while(index < size) {
+        cout << arr[index] * 2  << " ";
+        index++;
+    }
+
+}
+
+int main() {
+
+    int myArray[]={1,2,3,4,5};
+    int size = sizeof(myArray) / sizeof(myArray[0]);
+    cout<< "Tableau avant doublement "<<endl;
+    printArray(myArray, size);
+    cout<< "Tableau apres doublement\n";
+    doubleValue(myArray, size);
+    return 0;
+}
+
+
+
+
+
+
+
+
 
 
 
