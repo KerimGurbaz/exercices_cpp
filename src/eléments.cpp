@@ -745,19 +745,6 @@ int main() {
 
     return 0;
 }
-
-
- */
-#include <iostream>
-#include <limits>
-#include <string>
-using namespace std;
-#include <iostream>
-using namespace std;
-
-#include <iostream>
-using namespace std;
-
 int main()
 {
     int n = 3;
@@ -777,6 +764,118 @@ int main()
             cout << "Autre\n";
     }
 }
+int main() {
+    int choix;
+    cout<<"Menu :\n1.Ajouter \n2.Supprimer \n3.Modifier \nChoisisez une option : ";
+    cin>>choix;
+
+    switch(choix) {
+        case 1:
+            cout<<"Ajouter selectionée";
+        break;
+        case 2:
+            cout<<"Supprimer selectionée";
+        break;
+
+        default:
+            cout<<"Option invalide "<<endl;
+
+        return 0;
+    }
+}
+int main() {
+    int n = 1;
+    switch(n) {
+        case 1: {
+            int x = 10;
+            cout<<"x = "<< x<<endl;
+        }
+        break;
+        default:
+            cout<<"Default case " ;
+    }
+    return 0;
+}
+int main() {
+    int x = 10;
+    while (x > 0) {
+        if (x % 2 == 0)
+            cout << x << " est pair." << endl;
+            x--;
+    }
+    return 0;
+}
+int main() {
+    for(int i = 0, j = 10; i < j; ++i, --j) {
+        cout << i << " " << j << endl;
+        if(i + j == 10);
+    }
+    return 0;
+}
+int main() {
+
+
+    for(int n = 5; n>0; n--) {
+        cout<< n<<" ";
+    }
+}
+int main() {
+    char response;
+    do {
+        cout<<"Voulez-vous continuer ? (o/n)";
+        cin>> response;
+
+    }while(response == 'o'|| response =='O');
+
+    return 0;
+}
+
+int main() {
+    for(int i = 1; i <= 5; i++) {
+        if(i == 3)
+            continue;
+        cout << i << " ";
+
+        {cout << i << " ";}
+
+    }
+    return 0;
+}
+ */
+#include <iostream>
+#include <limits>
+#include <string>
+using namespace std;
+
+
+int main() {
+    int count = 10;
+    while (count != 0) {
+        cout << "Compte à rebours : " << count << endl;
+        count--;
+    }
+    cout << "Fin du compte à rebours !" << endl;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
