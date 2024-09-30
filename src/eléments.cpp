@@ -931,14 +931,6 @@ int main() {
 
     return 0;
 }
-
-
- */
-#include <iostream>
-#include <limits>
-#include <string>
-using namespace std;
-
 //Fonction pour afficher le tableau
 void printArray(int *arr,int size) {
     int index = 0;
@@ -970,6 +962,14 @@ int main() {
     doubleValue(myArray, size);
     return 0;
 }
+
+ */
+#include <iostream>
+#include <limits>
+#include <string>
+using namespace std;
+
+
 
 
 
