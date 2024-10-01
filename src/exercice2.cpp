@@ -95,9 +95,6 @@ int main() {
 
     return 0;
 }
- */
-
-
 //Fonction pour échanger les valeurs de deux entiers via références
 void swap_values(int& a, int& b) {
     int temp = a;
@@ -133,6 +130,112 @@ int main() {
 
     return 0;
 }
+//MY_DEVOIR
+int main() {
+
+    int n, i(1), res(1),len;
+    cin>> n;
+
+    int my_factoriel(int n){
+        int i =1;
+        int res =1;
+       while(res <= n)
+
+    }
+
+
+    while(res <= n) {
+        ++i;
+        res *=i;
+    }
+
+    n%
+
+
+
+        len = sizeof(n);
+        string str =to_string((n));
+
+    cout<<len<< endl;
+
+
+    cout<<n;
+
+    cout<<res<<endl;
+
+    return 0;
+}
+
+int main() {
+    for(int i =1; i<=3; ++i) {
+        for(int j=1; j<=3; ++j) {
+            cout<< "(" << i << " , " << j  << ") ";
+        }
+        cout<<endl;
+    }
+    return 0;
+}
+int main() {
+    int i(1) ,j;
+    while(i<=3) {
+        int j =1;
+        while(j<=3) {
+            cout<< "(" << i << " , " << j  << ") ";
+            ++j;
+        }
+        cout<<endl;
+        ++i; cout<< j<<endl;
+    }
+
+
+
+
+    return 0;
+}
+
+int main() {
+    int n;
+    int somme;
+
+    do {
+        cout<< "Entrez un entier (Negatif pour términer) : ";
+        cin>>n;
+
+       somme = n>=0 ? somme +=n : 0;
+    } while(n>=0);
+    cout<< somme<<endl;
+
+
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n = 0, som = 0;
+    while (n < 5)
+    {
+        cout << "Entrez un entier : ";
+        cin >> n;
+        som += n;
+    }
+    cout << "Somme : " << som;
+    return 0;
+}
+ */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
