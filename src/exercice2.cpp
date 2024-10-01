@@ -223,26 +223,42 @@ int main()
     cout << "Somme : " << som;
     return 0;
 }
- */
 int main() {
-    string s = "Hello, world!";
-    int i;  // 'i' değişkeni tanımlanıyor
+    int i, j, k;
+    i = 0; k = i++;
+cout << "A : i = " << i << " k = " << k << endl;
 
-    // Dizinin her karakterini kontrol etmek için bir döngü
-    for (i = 0; i < s.length(); ++i) {
+i = 1; k = ++i;
+cout << "B : i = " << i << " k = " << k << endl;
 
-        if (s[i] == 'o') break;  cout<<"buradayim\n";
-    }
+i = 2; j = 3;
+k = i++ * ++j;
+cout << "C : i = " << i << " j = " << j << " k = " << k << endl;
 
-    // 'o' bulunup bulunmadığını kontrol et
-    if (i != s.length())
-        cout << "Le premier o est à l'indice " << i;
-    else
-        cout << "Pas de o";
+i = 3; j = 4;
+k = i *= --j;
+cout << "D : i = " << i << " j = " << j << " k = " << k << endl;
 
-
-
+    return 0;
 }
+ */
+
+int main() {
+    string s1 = "prg1";
+    string s2 = "prg2";
+    string s3 = "pdl";
+    string s4 = "prg";
+    string s5 = "pdg23";
+    string s6 = "Prg1";
+
+    cout<<(s1 > s6)<< endl;
+
+    return 0;
+}
+
+
+
+
 
 
 
