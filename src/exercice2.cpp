@@ -224,6 +224,28 @@ int main()
     return 0;
 }
  */
+int main() {
+    string s = "Hello, world!";
+    int i;  // 'i' değişkeni tanımlanıyor
+
+    // Dizinin her karakterini kontrol etmek için bir döngü
+    for (i = 0; i < s.length(); ++i) {
+
+        if (s[i] == 'o') break;  cout<<"buradayim\n";
+    }
+
+    // 'o' bulunup bulunmadığını kontrol et
+    if (i != s.length())
+        cout << "Le premier o est à l'indice " << i;
+    else
+        cout << "Pas de o";
+
+
+
+}
+
+
+
 
 
 
