@@ -313,8 +313,6 @@ int main() {
 
      return 0;
  }
- */
-
 double metresToMiles(double metres) {
     return metres * 6.213711922e-4;
 }
@@ -343,13 +341,59 @@ int main() {
     }else {
         cout<<"vous avez mal saisi." ;
     }
+    return 0;
+}
+
+int main() {
+
+    int x = 10;
+    int y = 20;
+    const int* ptr1 = &x;
+    cout<<*ptr1<<endl;
+    ptr1 = &y;
+    x = 15; // Est-ce possible ?
+    int *ptr2 =&x;
+
+
+
+
+    cout<<x<<endl;
+    cout<<*ptr1<<endl;
+    cout<<x<<endl;
+
+    cout << (ptr1 == ptr2 ? "oui" : "non")<<endl;
+}
+int main() {
+
+    int var1 = 1;
+    int *ptr1 =&var1;
+    *ptr1 = 5;
+    bool reponse =(*ptr1 ==var1);
+
+    cout<<reponse<<endl;
+    return 0;
+}
+int main() {
+
+    int var1 =20;
+    int var2 =10;
+    int* ptr1 =&var1;
+    int* ptr2 =&var2;
+
+    cout<<var1<<endl;
+    cout<<var2<<endl;
+
+    int t = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = t;
+
+    cout<<var1<<endl;
+    cout<<var2<<endl;
 
 
     return 0;
 }
-
-
-
+ */
 
 
 
