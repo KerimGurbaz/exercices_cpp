@@ -395,6 +395,18 @@ int main() {
 }
  */
 
+int main() {
+    int a(5),b(4);
+
+    b= ((a>0) ? b+1 : (a==0 ? 0 : b*=2));
+
+    cout<<b;
+
+
+
+
+    return 0;
+}
 
 
 
