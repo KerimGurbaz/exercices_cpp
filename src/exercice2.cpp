@@ -253,9 +253,7 @@ int main() {
 
     return 0;
 }
-
-
- */
+//Les opérateurs logiques
 int main() {
     int a,b,c,x,y;
     if((a==0 && b==0 && c!=0)||
@@ -276,6 +274,82 @@ int main() {
     if(a != 0 || b != 0);
 
 }
+int main() {
+    char x = 'A'; // 65
+    char y = '0'; // 48
+    char z;
+
+    z = x + 4;
+    cout << "1. " << z << endl;
+    cout << "2. " << ++z << endl;
+
+    z = x + 0;
+    cout << "3. " << z << endl;
+
+    z = x + '0';
+    cout << "4. " << z << endl;
+
+
+    return 0;
+}
+// Conversion de mètres en milles , pieds et pouces
+ int main() {
+     const double  metres_en_miles = 6.213711922e-4;
+     const double metres_en_fit = 3.280839895;
+     const double metres_en_inch =39.37007874;
+
+     // Saisie utilisateur
+
+     int nb_metres;
+     cout << "Entrez le nobre de metres a convertir (entier >0) : " ;
+     cin>> nb_metres;
+
+     cout << nb_metres<<" [m]" << endl
+     << "= " << nb_metres * metres_en_miles << " [miles]" << endl
+     << "= " << nb_metres * metres_en_fit << " [ft]" << endl
+     << "= " << nb_metres * metres_en_inch << " [inch]" << endl;
+
+
+
+     return 0;
+ }
+ */
+
+double metresToMiles(double metres) {
+    return metres * 6.213711922e-4;
+}
+double metresToFeet(double metres) {
+    return metres * 3.280839895;
+}
+double metresToInches(double metres) {
+    return metres * 39.37007874;
+}
+
+int main() {
+
+    double metres;
+    cout<<"Entrez le nombre de metres a convertir (entier > 0 ) : ";
+    cin>>metres;
+
+    if(metres >0) {
+        double miles = metresToMiles(metres);
+        double feet = metresToFeet(metres);
+        double inches =metresToInches(metres);
+
+        cout<<metres <<" [m] = "<<miles<< " [mile]"<< endl;
+        cout<<metres <<" [m] = "<<feet<< " [ft]"<< endl;
+        cout<<metres <<" [m] = "<<inches<< " [inch]"<< endl;
+
+    }else {
+        cout<<"vous avez mal saisi." ;
+    }
+
+
+    return 0;
+}
+
+
+
 
 
 
