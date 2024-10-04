@@ -425,7 +425,6 @@ int main() {
 
     return 0;
 }
- */
 
 int main() {
     int n;
@@ -461,6 +460,223 @@ int main() {
 
     return 0;
 }
+int main(){
+    int n;
+if(n>=0 && n<=0) {
+    cout<<"A";
+}
+    else if(n>=3 && n<=5) {
+
+        cout<<"B";
+    }
+    else {
+        cout<<"C";
+    }
+
+    return 0;
+}
+// SWITCH --> IF ... ELSE
+enum Color {RED, BLUE, GREEN};
+
+int main() {
+    Color c = BLUE; //Changez cette valeur pour tester
+
+    switch(c) {
+        case RED:
+            cout<<"Rouge";
+        break;
+        case BLUE:
+            cout<<"Bleu";
+        break;
+        case GREEN :
+            cout<<"Vert";
+        break;
+        default :
+            cout<<"Couleur inconnu "<<endl;
+    }
+}
+int main() {
+    int a;
+    cin>>a;
+    if(a == 0) {
+        cout<<"A"<<endl;
+    } else if(a == 1) {
+        cout<<"Z"<<endl;
+    } else if(a == 2) {
+        cout<<"a"<<endl;
+    }else {
+        cout<<"b"<<endl;
+    }
+    return 0;
+}int main() {
+
+    int a(0);
+     if(a==0) {
+         cout<<"0D";
+     }else {
+         cout<<"D"<<endl;
+     }
+
+    return 0;
+}
+int main() {
+    int a;
+    cin>>a;
+
+   switch (a) {
+        case 0 : cout << "0";
+        default : cout << "D"; break;
+    }
+
+
+    if (a == 0) {
+        cout << "0";
+    }
+    cout << "D";
+    return 0;
+}
+int main() {
+
+    int n;
+    if(0<=n && n<=5) {
+        cout<<"A"<<endl;
+    }else if(n==6) {
+        cout<<"34"<<endl;
+    }else if(n==7) {
+        cout<<"4";
+    }else {
+        cout<<"D"<<endl;
+    }
+
+
+    return 0;
+}
+// product discount
+int main() {
+
+    int productCode;
+    cout<<"Enter product code : "<<endl;
+    cin>>productCode;
+
+    int discount = 0;
+
+    switch(productCode) {
+        case 1:
+            case 2:
+            case 3:
+            discount = 10;
+            break;
+        case 4:
+            case 5:
+        discount = 15;
+        break;
+        case 6:
+            case 7:
+        case 8 :
+        case 9 :
+        discount = 20;
+        break;
+        default:
+            if(productCode >= 10 && productCode <=20) {
+                discount =25;
+                discount +=5; // une remise particulière(spéciale)
+            }else {
+                discount =5;
+            }
+    }
+cout<<"Discount applied :" << discount << " %"<<endl;
+    return 0;
+
+}
+//une machine distributrice
+int main() {
+    int codeBoisson;
+    double prixBase = 1.50;// prix de base par defaut
+
+    cout<<"Entrez le code de la boisson (1-5) : ";
+    cin>>codeBoisson;
+
+    double prixTotal = prixBase;
+
+    switch (codeBoisson) {
+
+            case 1:
+            case 2:
+            cout<< "Boisson sélectionnée : boisson gazeuse." <<endl;
+            break;
+            case 3:
+            case 4:
+        cout<<"Boisson sélectionnée : Jus de fruits."<< endl;
+       switch(codeBoisson) {
+           case 3:
+               prixTotal +=0.25; //Taxe;
+           break;
+           case 4:
+               prixTotal +=0.30; // Taxe;
+            break;
+       }
+        break;
+        case 5:
+            cout<<"Boisson sélectionnée : boisson sppéciale.";
+            prixTotal +=0.50; //Taxe
+        break;
+        default :
+            cout<<"Code de boisson invalide."<<endl;
+        //return 1;
+
+    }
+
+    return 0;
+}
+ */
+
+int main() {
+    int niveau;
+    int recompense = 0;
+    cout<<"Entrez le niveau du joueur (0-9): ";
+    cin>> niveau;
+
+    switch(niveau) {
+
+        case 9:
+            recompense +=100;
+        case 6:
+            case 7:
+        case 8 :
+        recompense +=75;
+        case 3:
+            case 4:
+        case 5:
+        recompense +=50;
+        case 0:
+            case 1:
+        case 2 :
+
+        recompense += 25;
+        break;
+
+
+        default :
+            cout <<"Niveau invalide"<< endl;
+            return 1;
+    }
+cout<<"Points de récompense totaux : "<< recompense << endl;
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
