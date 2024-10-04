@@ -628,8 +628,8 @@ int main() {
 
     return 0;
 }
- */
-
+*
+*
 int main() {
     int niveau;
     int recompense = 0;
@@ -663,6 +663,47 @@ int main() {
 cout<<"Points de récompense totaux : "<< recompense << endl;
     return 0;
 }
+
+int main() {
+
+    int n;
+    switch(n) {
+
+        case 1:
+            cout<<"A";
+        break;
+        case 4:
+            cout<<"C";
+        break;
+        case 2:
+            cout<<"E";
+        break;
+        default:
+            cout<<"BA";
+    }
+
+    return 0;
+}
+int main() {
+    int n;
+    switch(n) {
+        case 0:
+        case 1:
+        case 2:
+        cout<<"A";
+        break;
+        case 3:
+            case 4:
+        cout<<"B";
+        break;
+        default:
+            cout<<"D";break;
+    }
+    return 0;
+}
+ */
+
+
 
 
 
