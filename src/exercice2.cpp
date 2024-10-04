@@ -393,7 +393,6 @@ int main() {
 
     return 0;
 }
- */
 
 int main() {
     int a(5),b(4);
@@ -407,6 +406,63 @@ int main() {
 
     return 0;
 }
+
+int main() {
+
+    int n;
+    cin>>n;
+
+    switch(n) {
+        case 1:
+            cout<<"A";
+        break;
+        case 2:
+            cout<<"B";
+        break
+
+    }
+
+
+    return 0;
+}
+ */
+
+int main() {
+    int n;
+    cin>>n;
+    char c;
+    do {
+    switch(n) {
+        case 1:
+            case 2:
+                case 3: cout<<"A";
+        break;
+        case 4:
+            case 5:
+                case 6:
+        cout<<"B";
+        break;
+        default: cout <<"C";
+        break;
+
+    }
+        cout<<"\n\n";
+
+        cout<<"tekrar yapmak ister misiniz ? Y/N";
+        cin>>c;
+        if(c=='Y' || c=='y') {
+            cout<< "Veuillez entrer un numero: "<<endl;
+            cin>>n;
+        }else {
+            break;
+        }
+
+    }while(n !=0);
+
+    return 0;
+}
+
+
 
 
 
