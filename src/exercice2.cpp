@@ -700,8 +700,79 @@ int main() {
             cout<<"D";break;
     }
     return 0;
+}int main(){
+    bool b;
+    int n,i;
+    b = (i < 1 ) ? true : i<2;
+    return 0;
 }
- */
+//Frais de livraison
+
+int main() {
+    cout << "Livraison en Suisse ? (O/N) ";
+    char reponse1; cin >> reponse1;
+
+    if(reponse1 == 'o' || reponse1 =='O') {
+        cout << " Grisons ou Tessin ? (O/N) ";
+        char reponse2; cin >> reponse2;
+        if(reponse2 == 'o' || reponse2 =='O') {
+            cout<<"votre livraison est 7.00 CHF\n";
+        }else {
+            cout<<"votre livraison est 5.00 CHF\n";
+        }
+    }else {
+        cout << "Livraison en Liechtenstein ? (O/N) ";
+        char reponse3; cin >> reponse3;
+        if(reponse3 == 'o' || reponse3 =='O') {
+            cout<<"votre livraison est 7.00 CHF\n";
+        }else {
+             cout<<"10.00 CHF partout ailleurs dans le monde\n";
+        }
+
+    }
+}
+//Nomre de jours d'un mois
+
+int main() {
+
+    cout<<"Entrez un no de mois (1-12) : ";
+    int no_mois; cin>> no_mois;
+
+    if(no_mois==1 || no_mois==3 ||no_mois==5 ||no_mois==7 ||no_mois==8 ||no_mois==10 ||no_mois==12) {
+        cout<<"Ce mois comporte 31 jours";
+    }else if(no_mois==2 ) {
+        cout<<"Ce mois comporte 28 ou 29 jours\n";
+    }else {
+        cout<<"Ce mois comporte 30 jours\n";
+    }
+
+    cout<<"Ce mois comporte";
+
+
+    return 0;
+}
+*/
+
+
+//Nomre de jours d'un mois
+
+int main() {
+
+    cout<<"Entrez un no de mois (1-12) : ";
+    int no_mois; cin>> no_mois;
+
+    if(no_mois==1 || no_mois==3 ||no_mois==5 ||no_mois==7 ||no_mois==8 ||no_mois==10 ||no_mois==12) {
+        cout<<"Ce mois comporte 31 jours";
+    }else if(no_mois==2 ) {
+        cout<<"Ce mois comporte 28 ou 29 jours\n";
+    }else {
+        cout<<"Ce mois comporte 30 jours\n";
+    }
+
+
+
+    return 0;
+}
 
 
 
