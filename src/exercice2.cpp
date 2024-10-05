@@ -751,28 +751,71 @@ int main() {
 
     return 0;
 }
-*/
-
-
-//Nomre de jours d'un mois
-
 int main() {
 
-    cout<<"Entrez un no de mois (1-12) : ";
-    int no_mois; cin>> no_mois;
+    cout << "Entrez un no de mois (1-12) : ";
+    int no_mois; cin >> no_mois;
+    switch(no_mois) {
 
-    if(no_mois==1 || no_mois==3 ||no_mois==5 ||no_mois==7 ||no_mois==8 ||no_mois==10 ||no_mois==12) {
-        cout<<"Ce mois comporte 31 jours";
-    }else if(no_mois==2 ) {
-        cout<<"Ce mois comporte 28 ou 29 jours\n";
-    }else {
-        cout<<"Ce mois comporte 30 jours\n";
+        case 2:
+            cout<<"Ce mois comporte 28 ou 29 jours";
+            break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+            cout<<"Ce mois comporte 30 jours";
+            break;
+        default:
+
+            cout<<"Ce mois comporte 31 jours";
     }
 
 
 
     return 0;
 }
+*/
+
+
+//Note ECTS
+#include <cmath>
+int main() {
+    double note;
+    cout << "Entrez la note à convertir (entre 0 et 6) : ";
+    cin >> note;
+
+    // Vérification de la plage
+    if (note < 0.0 || note > 6.0) {
+        cout << "Erreur: la note doit être entre 0 et 6." << endl;
+        return 1;
+    }
+
+    // Arrondir la note au quart inférieur
+    note = floor(note * 4) / 4.0;
+
+    // Conversion de la note UNIGE à la note ECTS
+    char noteECTS;
+    if (note >= 5.25) {
+        noteECTS = 'A';
+    } else if (note >= 4.75) {
+        noteECTS = 'B';
+    } else if (note >= 4.5) {
+        noteECTS = 'C';
+    } else if (note >= 4.25) {
+        noteECTS = 'D';
+    } else if (note >= 4.0) {
+        noteECTS = 'E';
+    } else {
+        noteECTS = 'F';
+    }
+
+    cout << "La note ECTS équivalente est: " << noteECTS << endl;
+    return 0;
+}
+
+
+
 
 
 
