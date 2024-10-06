@@ -844,11 +844,64 @@ int main() {
     }
     return 0;
 }
-
-*/
 #include <iostream>
 #include <cmath>
 using namespace std;
+
+int main() {
+    int i = 0;
+    while(i - 10) {
+
+        i+=2; cout<<i << " ";
+    }
+
+    return 0;
+}
+//Structures de controle
+int main() {
+    int a = 1, b = 2, c = 3;
+    while (a < 5 && (b += 2) < 10 || c-- > 0) {
+        cout << "a: " << a << ", b: " << b << ", c: " << c << endl;
+        a++;
+    }
+    return 0;
+}
+#include <iostream>
+using namespace std;
+
+int main() {
+    for(int i = 1; i <= 15; i++) {
+        if(i % 3 == 0) {
+            continue;
+        }
+        if(i > 10) {
+            break;
+        }
+        cout << i << " ";
+    }
+    return 0;
+}
+*/
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int x = 0, y = 5;
+    do {
+        if (x++ > 2)
+            y += x;
+        else
+            y -= x;
+    } while (x < 5);
+    cout << x << " " << y;
+
+}
+
+
+
+
+
 
 
 
