@@ -1,10 +1,11 @@
 //
 // Created by Krm on 30/09/2024.
 //
-#include <iostream>
-using namespace std;
+
 
 /*
+ *#include <iostream>
+using namespace std;
  * int main(){
 int i, n , som;
     som =0;
@@ -881,7 +882,6 @@ int main() {
     }
     return 0;
 }
-*/
 
 #include <iostream>
 using namespace std;
@@ -897,6 +897,50 @@ int main() {
     cout << x << " " << y;
 
 }
+
+//Accroissement d'un avoir bancaire
+int main() {
+    double montant_initial, montant_cible, taux_interet_annuel;
+    double montant_actuel;
+    int annes = 0;
+    //Récupère les entrées de l'utilisateur
+    cout<<"Entrez le montant initial : "<< endl;
+    cin>> montant_initial;
+
+    cout<< "Entrez le montant cible : ";
+    cin>>montant_cible;
+
+    cout<<"Entrez le taux d'interet annuel en % : ";
+    cin>>taux_interet_annuel;
+
+    // Definir la quantité de départ comme quantité actuelle
+    montant_actuel = montant_initial;
+
+    // cas particulier
+    if (montant_initial < montant_cible and taux_interet_annuel <= 0.0) {
+        cout << "Le montant cible ne sera jamais atteint" << endl;
+        return EXIT_SUCCESS;
+    }
+
+    //Compte les années jusqu'à attenindre l'objectif
+
+    while(montant_actuel < montant_cible) {
+        // Appliquer les intérêts
+        montant_actuel += montant_actuel*(taux_interet_annuel/100.0);
+        annes++;
+
+    }
+
+    //Imprimer le résultat à l'écran;
+    cout<< "Le montant cible est atteint apres "<< annes<< " ans."<<endl;
+
+
+    return 0;
+}
+*/
+
+
+
 
 
 
